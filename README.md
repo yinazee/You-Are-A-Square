@@ -24,3 +24,17 @@ isSquare(26) returns  false
 
 My Solution:
 
+function isSquare(n) {
+	perfectSquare = Math.sqrt(n);
+	if (perfectSquare * perfectSquare === n && Number.isInteger(perfectSquare)) {
+		return true;
+	} else {
+		return false;
+	}
+};
+
+Better Solution:
+
+function isSquare(n) {
+   return Math.sqrt(n) % 1 === 0;
+ }
